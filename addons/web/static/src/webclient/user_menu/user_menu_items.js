@@ -107,6 +107,14 @@ function logOutItem(env) {
 
 registry
     .category("user_menuitems")
+    .add("shortcuts", shortCutsItem)
+    .add("separator", separator)
+    .add("profile", preferencesItem)
+    .add("log_out", logOutItem);
+
+/*
+registry
+    .category("user_menuitems")
     .add("documentation", documentationItem)
     .add("support", supportItem)
     .add("shortcuts", shortCutsItem)
@@ -114,3 +122,4 @@ registry
     .add("profile", preferencesItem)
     .add("odoo_account", odooAccountItem)
     .add("log_out", logOutItem);
+*/    
